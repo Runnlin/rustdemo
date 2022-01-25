@@ -22,5 +22,10 @@ fn value_in_cents(coin: Coin) -> u8 {
         // Default
         _ => 0,
     }
+
+}
+
+if let 3 = 3 {
+    println!("Three is three!");
 }
 }
