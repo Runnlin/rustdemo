@@ -3,7 +3,7 @@
 mod front_of_house;
 
 use crate::front_of_house::{hosting, serving as serves};
-use std::{collections::HashMap, fs::File};
+use std::{collections::HashMap, fs::File, fmt::Result};
 
 
 pub fn eat_at_restaurant() {
@@ -45,5 +45,9 @@ pub fn eat_at_restaurant() {
     scores.insert(String::from("yello"), 50);
 
     let f = File::open("Hello.txt");
+    match f {
+        Ok(_) => todo!(),
+        Err(_) => todo!(),
+    }
 
 }
